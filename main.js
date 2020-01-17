@@ -30,3 +30,8 @@ class Blockchain{
 }
 
 let savjeeCoin = newBlockchain();
+
+savjeeCoin.addBlock(new Block("20/07/2017", { amount: 4 }));
+savjeeCoin.addBlock(new Block("22/07/2017", { amount: 14 }));
+
+console.log(JSON.stringify(savjeeCoin, null, 4));
